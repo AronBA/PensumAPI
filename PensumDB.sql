@@ -14,11 +14,11 @@ GO
 
 CREATE TABLE tbl_Lektion (
 	Id INT NOT NULL IDENTITY(0, 1),
-	Lehrperson CHAR(2) NOT NULL,
 	Klasse CHAR(3) NOT NULL,
 	WochenTag CHAR(2) NOT NULL,
 	Uhrzeit CHAR(5) NOT NULL,
-	Zimmer CHAR(3) NOT NULL,
-	Fach CHAR(5) NOT NULL,
+	Fach CHAR(5),
+	Lehrperson CHAR(2),
+	Zimmer CHAR(3) ,
 	CONSTRAINT PK_Lektion PRIMARY KEY (Id)
 )
