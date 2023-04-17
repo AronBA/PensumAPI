@@ -1,6 +1,6 @@
 import json
 
-with open("klassen.json", "r") as f:
+with open("class.json", "r") as f:
     n = json.load(f)
 
 insert = f"INSERT INTO tbl_Lektion VALUES "
